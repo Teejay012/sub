@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: greenyellow;
+    min-height: 100vh;
+}
+.container{
+    width: 300px;
+    height: 600px;
+    border: 1px solid green;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.character{
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: relative;
+    top: 500px;
+    left: 100px;
+}
+.block{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    animation: train 0.7s infinite linear;
+}
+.left{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+}
+.right{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 50%;
+}
+button{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    border: none;
+    padding: 7px 0;
+    background: #CCC;
+    border-radius: 5px;
+    color: green;
+    outline: none;
+}
+@keyframes train{
+    0%{top: -50%;}
+    100%{top: 650px;}
+}
